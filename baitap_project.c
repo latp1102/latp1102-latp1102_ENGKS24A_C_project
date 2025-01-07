@@ -297,8 +297,9 @@ int kiemTraTenHopLe(char ten[]){
     if (strlen(ten) == 0 || strlen(ten) > 50) 
         return 0; 
     for (int i = 0; i < strlen(ten); i++){
-        if (isalpha(ten[i]) == 0 && ten[i] != ' ') 
+        if (isalpha(ten[i]) == 0 && ten[i] != ' '){
             return 0; 
+	}
     }
     return 1; 
 }
